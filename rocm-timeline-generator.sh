@@ -35,7 +35,8 @@ start_time=`get_arg $4 -1`
 end_time=`get_arg $5 -1`
 
 tmp=/tmp
-awk_fn=fn-rocm-timeline-generator.awk
+awk_dir=`dirname $0`
+awk_fn=${awk_dir}/fn-rocm-timeline-generator.awk
 
 echo "log file ${log_file}"
 
